@@ -16,4 +16,6 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr && dock
 
 COPY usr/local/etc/php-fpm.d/zzz-tweaks.conf /usr/local/etc/php-fpm.d/zzz-tweaks.conf
 
+COPY usr/local/etc/php/php.ini /usr/local/etc/php/php.ini
+
 EXPOSE 9000
